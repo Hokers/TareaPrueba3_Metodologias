@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Interfaz.FXMLDificultadController">
+   <children>
+      <ImageView fitHeight="144.0" fitWidth="136.0" layoutX="465.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../buscaminas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="451.0" fitWidth="737.0" layoutX="223.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../titulo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="296.0" fitWidth="494.0" layoutX="340.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../ss.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="237.0" layoutX="423.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../boton1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="237.0" layoutX="424.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../difi2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="237.0" layoutX="426.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../difi3.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
