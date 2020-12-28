@@ -26,6 +26,8 @@ public class FXMLDocumentController implements Initializable {
     private GridPane matrizJuego;
     @FXML
     private Button botonReiniciar;
+    @FXML
+    private Button botonIniciar;
     
     int numero=8;
       
@@ -56,6 +58,11 @@ public class FXMLDocumentController implements Initializable {
             System.out.println(i);
         }
         
+        
+    }
+    
+    public void iniciarJuego(ActionEvent event)
+    {
         
     }
 }
