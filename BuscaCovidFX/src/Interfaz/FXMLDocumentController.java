@@ -5,11 +5,13 @@
  */
 package Interfaz;
 
+import java.awt.Color;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 /**
@@ -18,20 +20,35 @@ import javafx.scene.control.Label;
  */
 public class FXMLDocumentController implements Initializable {
     
-    @FXML
-    private Label label;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
+    puntaje casillas;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
     
-    
+    class casilla extends Button {
+        private boolean descubierta;
+        casilla(){
+            descubierta = false;
+        }
+        public void descubrir(){
+            descubierta= true;
+        }
+        public boolean estado(){
+            return descubierta;
+        }
+}
+    public void cuentaCasillas(casilla matriz [][]){//Cuenta casillas descubiertas
+        
+        int casilla=0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if(matriz[i][j].estado()==true ){
+                    casilla+=1;
+                }
+            }
+        }
+        casillas.sumaPuntaje(casilla);
+    }
     
 }
