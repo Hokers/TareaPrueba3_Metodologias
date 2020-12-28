@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.GridPane;
 
 /**
@@ -26,18 +27,29 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button botonReiniciar;
     
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
+    int numero=8;
+      
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        for (int i = 0; i < numero; i++) {
+            for (int j = 0; j < numero; j++) {
+                ToggleButton nuevoBoton = new ToggleButton("hola"); 
+                nuevoBoton.setPrefWidth(40);
+                nuevoBoton.setPrefHeight(40); 
+                
+                matrizJuego.add(nuevoBoton, i, j);
+                
+            }
+        }
     }    
 
     @FXML
-    private void accionReiniciar(ActionEvent event) {
+    private void accionReiniciar(ActionEvent event) { 
+        
+        
     }
     
+    public void rellenoMatriz(){
+
+    }
 }
