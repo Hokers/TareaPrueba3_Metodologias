@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Timer;
+package Utility;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,7 +11,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Hachi
+ * @author Hokers
  */
 public class Cronometro implements ActionListener {
     public int segundos;
