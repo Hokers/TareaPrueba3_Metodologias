@@ -9,32 +9,32 @@
    <children>
       <ImageView fitHeight="144.0" fitWidth="136.0" layoutX="465.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../buscaminas.png" />
+            <Image url="@../images/buscaminas.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="597.0" fitWidth="810.0" layoutX="150.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../buscacovidss.png" />
+            <Image url="@../images/buscacovidss.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="281.0" fitWidth="404.0" layoutX="341.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../ss.png" />
+            <Image url="@../images/ss.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="164.0" fitWidth="237.0" layoutX="423.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../boton1.png" />
+            <Image url="@../images/boton1.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="164.0" fitWidth="237.0" layoutX="424.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../difi2.png" />
+            <Image url="@../images/difi2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="164.0" fitWidth="237.0" layoutX="426.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../difi3.png" />
+            <Image url="@../images/difi3.png" />
          </image>
       </ImageView>
       <Button fx:id="dificultad1" layoutX="432.0" layoutY="477.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
