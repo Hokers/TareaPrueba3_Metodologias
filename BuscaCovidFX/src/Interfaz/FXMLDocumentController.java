@@ -33,12 +33,14 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         for (int i = 0; i < numero; i++) {
             for (int j = 0; j < numero; j++) {
-                ToggleButton nuevoBoton = new ToggleButton("hola"); 
+                ToggleButton nuevoBoton = new ToggleButton(" "); 
                 nuevoBoton.setPrefWidth(40);
-                nuevoBoton.setPrefHeight(40); 
+                nuevoBoton.setPrefHeight(40);  
                 
-                matrizJuego.add(nuevoBoton, i, j);
-                
+                nuevoBoton.setOnAction((ActionEvent events)->{
+                    rellenoMatriz();
+                });
+                matrizJuego.add(nuevoBoton, i, j);   
             }
         }
     }    
@@ -50,6 +52,10 @@ public class FXMLDocumentController implements Initializable {
     }
     
     public void rellenoMatriz(){
-
+       for (int i = 0; i < matrizJuego.getChildren().size(); i++) {
+            System.out.println(i);
+        }
+        
+        
     }
 }
