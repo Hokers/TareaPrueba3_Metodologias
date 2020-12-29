@@ -5,6 +5,7 @@
  */
 package Interfaz;
 
+import Utility.Cronometro;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,6 +20,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import java.io.IOException; 
+import javafx.scene.Node; 
 import javafx.stage.Stage;
 
 /**
@@ -43,13 +47,16 @@ public class FXMLDocumentController implements Initializable {
     static int numero=0;
     @FXML
     private AnchorPane anchorPane;
+    
+    private Cronometro crono;
             
-  
+   
     
     double anchoPantalla = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
     double altoPantalla = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
   
-      
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         for (int i = 1; i < numero+1; i++) {
@@ -66,20 +73,22 @@ public class FXMLDocumentController implements Initializable {
         }
     }    
     
-    public void inicio() throws IOException{
+    public void inicio() throws IOException{ 
+ 
+ 
+        //Stage stage2 = (Stage) this.inicio.getScene().getWindow(); stage2.close();  
+        Stage stage = new Stage();  
+        Parent root2 = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));  
+        Scene scene = new Scene(root2); stage.setScene(scene);  
+        stage.show(); 
+         
+    } 
+    
 
-
-        //Stage stage2 = (Stage) this.inicio.getScene().getWindow(); stage2.close(); 
-        Stage stage = new Stage(); 
-        Parent root2 = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml")); 
-        Scene scene = new Scene(root2); stage.setScene(scene); 
-        stage.show();
-        
-    }
     
     @FXML
     private void accionReiniciar(ActionEvent event) { 
-        
+        crono.ReiniciarCronometro();
     }
     
     public void rellenoMatriz(){
@@ -92,6 +101,7 @@ public class FXMLDocumentController implements Initializable {
         
         inicioPane.setVisible(false);
         gamePane.setVisible(true);
+        crono = new Cronometro();
         crono.IniciarCronometro();
         
         
