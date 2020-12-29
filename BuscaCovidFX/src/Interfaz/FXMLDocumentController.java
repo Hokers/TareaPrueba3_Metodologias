@@ -49,15 +49,16 @@ public class FXMLDocumentController implements Initializable {
                     rellenoMatriz();
                     
                 });
-                matrizJuego.add(nuevoBoton, i, j); 
-                
+                matrizJuego.add(nuevoBoton, i, j);    
             }
+        
         }
         matrizJuego.setOnMouseClicked(e -> {
-                    if (e.getButton() == MouseButton.SECONDARY){
-                        System.out.println("marcar");
-                    }
-                });
+            if (e.getButton() == MouseButton.SECONDARY){
+                System.out.println("marcar");
+            }
+        });
+        
         
     }    
 
@@ -71,6 +72,7 @@ public class FXMLDocumentController implements Initializable {
        for (int i = 0; i < matrizJuego.getChildren().size(); i++) {
             System.out.println(i);
         }
+        
         
     }
     
