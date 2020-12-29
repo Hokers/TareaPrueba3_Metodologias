@@ -29,6 +29,7 @@ public class Cronometro implements ActionListener {
     public void IniciarCronometro()
     {
         cronometro.start();
+        
     }
     public void ReiniciarCronometro()
     {
