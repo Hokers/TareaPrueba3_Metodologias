@@ -44,12 +44,11 @@ public class RandomMatriz {
 
     public int[][] randomVirus() {
 
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                tablero[filas][columnas] = (int) (Math.random());
-                System.out.println((int) (Math.random()));
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                tablero[r.nextInt() * filas][r.nextInt() * filas] = 4; // el 4 es para diferenciar el virus
+
             }
-            System.out.println();
         }
 
         return tablero;
@@ -59,10 +58,8 @@ public class RandomMatriz {
 
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
-                tablero[i][j] = 1;
-                System.out.println((tablero[i][j]));
+                tablero[filas][columnas] = (int) (r.nextInt() * 4); // toma numeros 3ntre el 3 y 1 para realizar la matriz, sin contar los virus     
             }
-            System.out.println();
         }
 
         return tablero;
