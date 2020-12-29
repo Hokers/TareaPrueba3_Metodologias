@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.FXMLDificultadController">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.FXMLDificultadController">
    <children>
       <ImageView fitHeight="144.0" fitWidth="136.0" layoutX="465.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -37,8 +37,8 @@
             <Image url="@../images/difi3.png" />
          </image>
       </ImageView>
-      <Button fx:id="dificultad1" layoutX="432.0" layoutY="477.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
-      <Button fx:id="dificultad2" layoutX="432.0" layoutY="569.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
-      <Button fx:id="dificultad3" layoutX="437.0" layoutY="658.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
+      <Button fx:id="dificultad1" layoutX="432.0" layoutY="477.0" mnemonicParsing="false" onAction="#accionPrincipiante" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
+      <Button fx:id="dificultad2" layoutX="432.0" layoutY="569.0" mnemonicParsing="false" onAction="#accionIntermedio" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
+      <Button fx:id="dificultad3" layoutX="437.0" layoutY="658.0" mnemonicParsing="false" onAction="#accionAvanzado" prefHeight="74.0" prefWidth="212.0" style="-fx-background-color: nothing;" />
    </children>
 </AnchorPane>
