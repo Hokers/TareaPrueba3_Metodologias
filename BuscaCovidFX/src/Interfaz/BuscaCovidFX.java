@@ -19,7 +19,7 @@ public class BuscaCovidFX extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDificultad.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -32,6 +32,8 @@ public class BuscaCovidFX extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+       
+        
     }
     
 }
