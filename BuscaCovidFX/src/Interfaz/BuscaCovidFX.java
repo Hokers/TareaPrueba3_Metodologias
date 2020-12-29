@@ -32,6 +32,8 @@ public class BuscaCovidFX extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+       
+        
     }
     
 }
