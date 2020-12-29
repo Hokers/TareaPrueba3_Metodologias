@@ -9,6 +9,9 @@ import javafx.scene.control.Label;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseButton;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 public class FXMLDificultadController {
 
@@ -20,9 +23,10 @@ public class FXMLDificultadController {
 
     @FXML
     private Button dificultad3;
+    
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
-
+        
     }
 }

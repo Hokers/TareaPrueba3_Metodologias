@@ -8,12 +8,17 @@ package Interfaz;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 
 /**
  *
@@ -26,11 +31,14 @@ public class FXMLDocumentController implements Initializable {
     private GridPane matrizJuego;
     @FXML
     private Button botonReiniciar;
+    @FXML
+    private AnchorPane principal;
     
     int numero=8;
       
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         for (int i = 0; i < numero; i++) {
             for (int j = 0; j < numero; j++) {
                 ToggleButton nuevoBoton = new ToggleButton(" "); 
@@ -39,10 +47,18 @@ public class FXMLDocumentController implements Initializable {
                 
                 nuevoBoton.setOnAction((ActionEvent events)->{
                     rellenoMatriz();
+                    
                 });
-                matrizJuego.add(nuevoBoton, i, j);   
+                matrizJuego.add(nuevoBoton, i, j); 
+                
             }
         }
+        matrizJuego.setOnMouseClicked(e -> {
+                    if (e.getButton() == MouseButton.SECONDARY){
+                        System.out.println("marcar");
+                    }
+                });
+        
     }    
 
     @FXML
@@ -56,6 +72,6 @@ public class FXMLDocumentController implements Initializable {
             System.out.println(i);
         }
         
-        
     }
+    
 }
